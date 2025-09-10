@@ -49,8 +49,8 @@ export default {
         },
         police: {
           primary: "hsl(var(--police-primary))",
-          dark: "hsl(var(--police-dark))",
-          card: "hsl(var(--police-card))",
+          secondary: "hsl(var(--police-secondary))",
+          accent: "hsl(var(--police-accent))",
         },
         status: {
           safe: "hsl(var(--status-safe))",

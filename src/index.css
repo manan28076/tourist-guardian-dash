@@ -8,51 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 218 23% 8%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 224 13% 10%;
 
-    --card: 224 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 13% 10%;
 
-    --popover: 224 20% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 13% 10%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 224 13% 10%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217 32% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 13% 10%;
 
-    --muted: 217 32% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
 
-    --accent: 217 32% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 224 13% 10%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 217 91% 60%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 13% 10%;
 
-    /* Police Dashboard Colors */
-    --police-primary: 217 91% 60%;
-    --police-dark: 224 20% 8%;
-    --police-card: 224 20% 12%;
+    /* Professional Light Theme Colors */
+    --police-primary: 224 13% 10%;
+    --police-secondary: 220 14% 96%;
+    --police-accent: 214 32% 91%;
     
-    /* Status Colors */
+    /* Status Colors - More vibrant for better visibility */
     --status-safe: 142 76% 36%;
     --status-danger: 0 84% 60%;
-    --status-warning: 25 95% 53%;
+    --status-warning: 35 91% 50%;
     
-    /* Gradients */
-    --gradient-header: linear-gradient(135deg, hsl(224 20% 8%), hsl(217 32% 17%));
-    --gradient-card: linear-gradient(145deg, hsl(224 20% 12%), hsl(217 32% 17%));
+    /* Gradients for depth */
+    --gradient-header: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 14% 96%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
     
-    /* Shadows */
-    --shadow-card: 0 4px 20px hsl(224 20% 4% / 0.3);
-    --shadow-status: 0 0 20px hsl(var(--status-safe) / 0.3);
+    /* Shadows for elevation */
+    --shadow-card: 0 1px 3px hsl(0 0% 0% / 0.1), 0 1px 2px hsl(0 0% 0% / 0.06);
+    --shadow-elevated: 0 4px 6px hsl(0 0% 0% / 0.07), 0 2px 4px hsl(0 0% 0% / 0.06);
+    --shadow-status: 0 0 20px hsl(var(--status-safe) / 0.2);
 
     --radius: 0.5rem;
 
@@ -74,41 +75,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 218 23% 8%;
-    --foreground: 210 40% 98%;
+    --background: 224 13% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 224 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 224 13% 13%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 224 20% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 224 13% 13%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 224 13% 10%;
 
-    --secondary: 217 32% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217 32% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 25% 20%;
+    --muted-foreground: 217 10% 64%;
 
-    --accent: 217 32% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 215 25% 20%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 217 91% 60%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 0 0% 83%;
   }
 }
 
