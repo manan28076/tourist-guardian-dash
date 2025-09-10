@@ -78,11 +78,35 @@ const Index = () => {
     
     // Simulate API call to fetch tourist data
     setTimeout(() => {
-      if (touristId === 'T001' || touristId === 'QR_T001_2024') {
-        setScannedTourist({ ...mockTourist, status: currentStatus });
+      try {
+        let parsedData;
+        let actualTouristId;
+        
+        // Try to parse as JSON first
+        try {
+          parsedData = JSON.parse(touristId);
+          actualTouristId = parsedData.id;
+        } catch {
+          // If not JSON, use the raw string as ID
+          actualTouristId = touristId;
+        }
+        
+        // Create tourist data based on scanned information
+        const touristData = {
+          ...mockTourist,
+          id: actualTouristId,
+          name: parsedData?.name || 'Unknown Tourist',
+          qrCodeId: touristId,
+          status: currentStatus,
+          // Update hash to include the actual tourist ID
+          hash: `${actualTouristId}_${Date.now()}_hash_verification`
+        };
+        
+        setScannedTourist(touristData);
         setError('');
-      } else {
-        setError('Tourist not found');
+      } catch (error) {
+        console.error('Error processing tourist data:', error);
+        setError('Invalid QR code format');
         setScannedTourist(null);
       }
     }, 1000);
