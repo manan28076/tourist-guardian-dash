@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        police: {
+          primary: "hsl(var(--police-primary))",
+          dark: "hsl(var(--police-dark))",
+          card: "hsl(var(--police-card))",
+        },
+        status: {
+          safe: "hsl(var(--status-safe))",
+          danger: "hsl(var(--status-danger))",
+          warning: "hsl(var(--status-warning))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
